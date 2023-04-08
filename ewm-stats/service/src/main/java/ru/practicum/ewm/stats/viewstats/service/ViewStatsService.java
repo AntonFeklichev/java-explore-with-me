@@ -7,7 +7,6 @@ import ru.practicum.ewm.stats.dto.viewstats.ViewStatsRequestDto;
 import ru.practicum.ewm.stats.endpointhit.repository.EndpointHitRepository;
 import ru.practicum.ewm.stats.viewstats.projections.ViewStatsProjection;
 
-import javax.persistence.OrderBy;
 import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.List;
