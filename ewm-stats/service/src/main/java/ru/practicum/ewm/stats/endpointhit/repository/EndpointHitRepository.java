@@ -57,7 +57,6 @@ public interface EndpointHitRepository extends JpaRepository<EndpointHit, Long> 
            "    hit.uri, hit.ip " +
            "order by " +
            "    hits desc")
-        //TODO: Add order by hits
     List<ViewStatsProjection> findAllByStartEndUnique(LocalDateTime start, LocalDateTime end);
 
 
