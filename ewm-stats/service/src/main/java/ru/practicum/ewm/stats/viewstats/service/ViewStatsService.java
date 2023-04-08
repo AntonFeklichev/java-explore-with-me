@@ -19,7 +19,7 @@ import static java.util.stream.Collectors.toList;
 public class ViewStatsService {
     private final EndpointHitRepository endpointHitRepository;
 
-    private final Function<ViewStatsProjection, ViewStats> MAPPER = proj ->
+    private static final Function<ViewStatsProjection, ViewStats> MAPPER = proj ->
             ViewStats
                     .builder()
                     .hits(proj.getHits())
